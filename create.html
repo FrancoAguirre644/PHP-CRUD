@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="resources/css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="resources/js/main.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="resources/logica/create.php" method="POST" onsubmit="return validate()">
+        
+            <h2>Enter your dates</h2>
+            <div class="container-input"><input type="text" name="firstName" id="firstName" placeholder="Enter your first name">
+                <div class="border-animation"></div>
+            </div>
+            <div class="container-error" id="firstNameError"></div>
+
+            <div class="container-input"><input type="text" name="lastName" id="lastName" placeholder="Enter your last name"></div>
+            <div class="container-error" id="lastNameError"></div>
+
+            <div class="container-input"><input type="text" name="email" id="email" placeholder="Enter your email"></div>
+            <div class="container-error" id="emailError"></div>
+
+            <div class="container-input"><input type="text" name="phone" id="phone" placeholder="Enter your your phone"></div>
+            <div class="container-error" id="phoneError"></div>
+
+            <div class="container-input"><input type="text" name="hobby" id="hobby" placeholder="Enter your last hobby"></div>
+            <div class="container-error" id="hobbyError"></div>
+
+            <input class="btn-submit" type="submit" name="btn-submit" value="Save">
+
+        </form>
+    </div>
+</body>
+
+</html>
